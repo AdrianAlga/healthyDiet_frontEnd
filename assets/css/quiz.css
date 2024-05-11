@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+#quiz .container-fluid {
+  height: 100vh;
+  background-image: url(../images/background-quiz.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+/* Vector */
+#quiz .vector img:nth-child(1) {
+  height: 300px;
+  width: 300px;
+  top: 20px;
+  left: 20px;
+  position: absolute;
+}
+#quiz .vector img:nth-child(2) {
+  height: 300px;
+  width: 250px;
+  bottom: 100px;
+  right: 20px;
+  position: absolute;
+}
+/* end-vector */
+
+/* subjudul */
+#quiz .subjudul {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  color: white;
+  text-shadow: 5px 5px 3px black;
+}
+#quiz .subjudul h3 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  font-size: 60px;
+}
+#quiz .subjudul h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 800;
+  font-size: 50px;
+}
+/* end-subjudul */
+
+#quiz .cardd {
+  width: 500px;
+  padding: 10px 30px 30px 30px;
+  border-radius: 30px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  border: solid 2px black;
+  box-shadow: 7px 7px 0px 5px black;
+}
+
+#quiz .cardd .buble {
+  align-self: flex-end;
+}
+
+#quiz .cardd .buble span {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(173, 234, 104);
+  border-radius: 50%;
+  border: solid 2px black;
+}
+
+#quiz .cardd .soal {
+  display: flex;
+}
+#quiz .cardd h5 {
+  text-transform: uppercase;
+}
+#quiz .cardd .jawaban label {
+  text-transform: capitalize;
+}
+
+#quiz .next button {
+  position: absolute;
+  border-radius: 50px;
+  width: 178px;
+  height: 68px;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: transparent;
+  bottom: 20px;
+  right: 20px;
+  border: double 8px #55ace2;
+  color: #55ace2;
+}
+
+#quiz .next button:active {
+  border: double 8px #0e7658;
+  color: #0e7658;
+}
+
+@media only screen and (max-width: 576px) {
+  #quiz .vector img:nth-child(1) {
+    display: none;
+  }
+
+  #quiz .subjudul {
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 3px rgb(138, 128, 128);
+  }
+
+  #quiz .vector img:nth-child(2) {
+    height: 200px;
+    width: 150px;
+    bottom: 10px;
+    left: 20px;
+    position: absolute;
+  }
+}

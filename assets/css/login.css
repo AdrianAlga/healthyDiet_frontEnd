@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Great+Vibes&family=Poetsen+One&display=swap");
+
+:root {
+  --font_romantice: "Great Vibes", cursive;
+  --font_chewy: "Chewy", system-ui;
+  --font_poetsen: "Poetsen One", sans-serif;
+}
+
+#login .container-fluid {
+  height: 100vh;
+  background-color: #0a0909;
+  background-image: url(../images/background-login.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#login .text-header {
+  text-align: center;
+}
+
+#login .text-header h1:nth-child(1) {
+  color: rgb(75, 116, 8);
+  font-size: 40px;
+  font-family: var(--font_romantice);
+}
+
+#login .text-header h1:nth-child(2) {
+  color: #4b7408;
+  font-size: 50px;
+  font-family: var(--font_poetsen);
+  font-weight: 900;
+}
+#login .text-header h1:nth-child(3) {
+  color: rgb(161, 169, 85);
+  font-size: 40px;
+  font-family: var(--font_chewy);
+  font-weight: 400;
+}
+#login .ico_1 {
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+#login .ico_2 {
+  width: 300px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* card */
+#login .card {
+  width: 334px;
+  background-color: rgb(196, 192, 191);
+  box-shadow: 10px 10px 8px rgb(99, 97, 97);
+}
+#login .card .chechk {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#login .card .chechk label {
+  color: white;
+  font-size: small;
+}
+#login .card .chechk input {
+  cursor: pointer;
+}
+#login .card input::placeholder {
+  color: rgb(196, 192, 191);
+}
+#login .card button {
+  background-color: rgb(0, 184, 169);
+  color: white;
+}
+#login .card button:hover {
+  background-color: rgb(227, 235, 234);
+  color: rgb(75, 75, 75);
+}
+#login .card small {
+  font-size: small;
+  margin-top: 10px;
+}
+#login .card small a {
+  text-decoration: none;
+  color: #4b7408;
+}
+
+@media (max-width: 576px) {
+  /* Atur tata letak atau gaya khusus untuk ponsel */
+  #login .ico_1 {
+    display: none;
+  }
+  #login .ico_2 {
+    display: none;
+  }
+}
+

@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+#home .container-fluid {
+  height: 100vh;
+  background-image: url(../images/background-home.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+
+#home .sub-judul {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+#home .sub-judul h1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-size: 65px;
+  font-weight: 900;
+  font-style: normal;
+  transform: rotate(-10deg);
+  color: rgb(92, 116, 38);
+  text-shadow: 5px 5px 3px rgb(254, 155, 147);
+}
+
+#home .items {
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#home .items button {
+  height: 80px;
+  width: 225px;
+  border: solid 1px black;
+  border-radius: 25px;
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  color: rgb(168, 36, 10);
+  background-color: rgb(140, 198, 63);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#home .items button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(127, 225, 0);
+}
+
+@media only screen and (max-width: 576px) {
+  #home .items button {
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+  }
+  #home .items {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #home .items {
+    height: 300px;
+  }
+}

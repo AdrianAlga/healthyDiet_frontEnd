@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+#jenis .container-fluid {
+  height: 100vh;
+  background-image: url(../images/background-jenis.png);
+  background-size: 100% 100%;
+}
+
+#jenis .subjudul h1 {
+  font-size: 60px;
+  font-family: "Fredoka", sans-serif;
+  color: #526c3f;
+  font-weight: 600;
+}
+
+#jenis .item-jenis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#jenis .item-jenis button {
+  height: 80px;
+  width: 300px;
+  font-size: 25px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  border: solid 1px black;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background-color: #8cc63f;
+  color: #f3ffd9;
+}
+#jenis .item-jenis button:active {
+  background-color: #8be01b;
+  color: #ffffff;
+}
+
+#jenis .footer-jenis {
+  height: 60%;
+  width: 100%;
+  background-color: #526c3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#jenis .footer-jenis p {
+  margin-bottom: 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  color: white;
+  font-weight: 900;
+}
+
+#jenis .next button {
+  position: absolute;
+  border-radius: 50px;
+  width: 178px;
+  height: 68px;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: transparent;
+  bottom: 20px;
+  right: 20px;
+  border: double 8px #55ace2;
+  color: #55ace2;
+}
+
+#jenis .next button:active {
+  border: double 8px #0e7658;
+  color: #0e7658;
+}
+
+@media (max-width: 576px) {
+  #jenis .item-jenis button {
+    height: 50px;
+    width: 220px;
+    font-size: 15px;
+  }
+
+  #jenis .next button {
+    width: 128px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 900;
+    bottom: 100px;
+  }
+
+  #jenis .footer-jenis p {
+    font-size: 25px;
+    font-weight: 600;
+  }
+}

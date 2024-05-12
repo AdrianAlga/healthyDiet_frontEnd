@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+#diet .container-fluid {
+  height: 100vh;
+  position: relative;
+}
+
+#diet .vector img:nth-child(1) {
+  position: absolute;
+  height: 300px;
+  bottom: 10px;
+  left: 10px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+#diet .vector img:nth-child(2) {
+  position: absolute;
+  height: 220px;
+  top: 10px;
+  right: 10px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+#diet .subjudul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#diet .subjudul h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  color: #365614;
+}
+#diet .subjudul h3 {
+  font-family: "Dancing Script", cursive;
+  color: #375715;
+}
+
+#diet .penjelasan {
+  background-color: #7ba02f;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#diet .penjelasan p {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  font-family: "Calistoga", serif;
+}
+
+#diet .next button {
+  position: absolute;
+  border-radius: 50px;
+  width: 178px;
+  height: 68px;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: transparent;
+  bottom: 20px;
+  right: 20px;
+  border: double 8px #55ace2;
+  color: #55ace2;
+}
+
+#diet .next button:active {
+  border: double 8px #0e7658;
+  color: #0e7658;
+}
+
+@media (max-width: 576px) {
+  #diet .subjudul {
+    top: 50px;
+  }
+
+  #diet .penjelasan {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #diet .vector img:nth-child(1) {
+    height: 200px;
+    bottom: 10px;
+    left: 10px;
+  }
+  #diet .vector img:nth-child(2) {
+    display: none;
+  }
+
+  #diet .next button {
+    width: 128px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 900;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #diet .penjelasan {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

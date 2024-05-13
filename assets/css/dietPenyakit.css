@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=DynaPuff:wght@400..700&display=swap");
+
+#dietPenyakit .container-fluid {
+  height: 100vh;
+  background-image: url(../images/background-jenisDiet.png);
+  background-size: 100% 100%;
+}
+
+#dietPenyakit .container-fluid .tiga {
+  font-size: 130px;
+  font-weight: 900;
+  color: #5c7426;
+}
+
+#dietPenyakit .container-fluid .subjudul {
+  font-weight: 500;
+  border-bottom: dotted 20px #5c7426;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 50px;
+  color: #5c7426;
+}
+
+#dietPenyakit .container-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#dietPenyakit .card-item {
+  width: 350px;
+  height: 350px;
+  background-color: #d8f19e;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 20px;
+  border: solid 10px white;
+  padding-top: 70px;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
+  color: #5c7426;
+}
+
+#dietPenyakit .card-item h2 {
+  font-family: "Archivo Black", sans-serif;
+  color: #d8f19e;
+  text-shadow: 3px 3px 2px #3d322d, -1px -2px 0px #3d322d;
+  position: absolute;
+  bottom: -45px;
+  background-color: #d8f19e;
+  border: solid 10px white;
+  border-radius: 10px;
+  padding: 2px 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#dietPenyakit .card-item img {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: solid 10px white;
+  background-color: #a9c949;
+  box-shadow: 0px -10px 0px #90ba3e;
+}
+
+@media (max-width: 576px) {
+  #dietPenyakit .container-fluid {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  #dietPenyakit .card-item:nth-child(2) {
+    margin-bottom: 130px;
+    margin-top: 130px;
+  }
+  #dietPenyakit .container-fluid .tiga {
+    font-size: 100px;
+    font-weight: 900;
+    text-shadow: 5px 4px 3px black, -2px -3px 1px black;
+  }
+
+  #dietPenyakit .container-fluid .subjudul {
+    font-weight: 500;
+    border-bottom: dotted 10px #5c7426;
+    font-size: 30px;
+    text-shadow: 3px 2px 3px black;
+  }
+  .container-card {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 992px) {
+  #dietPenyakit .card-item {
+    /* width: auto; */
+    height: auto;
+  }
+}

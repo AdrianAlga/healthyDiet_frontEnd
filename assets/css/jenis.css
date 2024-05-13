@@ -6,6 +6,7 @@
   height: 100vh;
   background-image: url(../images/background-jenis.png);
   background-size: 100% 100%;
+  position: relative;
 }
 
 #jenis .subjudul h1 {

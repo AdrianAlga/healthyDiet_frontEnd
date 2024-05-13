@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+#manfaat .container-fluid {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/background-manfaat.png);
+  background-size: 100% 100%;
+}
+
+#manfaat .judul {
+  position: relative;
+  display: inline-block;
+}
+#manfaat .judul h1 {
+  color: #ee8d4a;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 900;
+  font-size: 55px;
+  font-family: "Open Sans", sans-serif;
+}
+#manfaat .judul img {
+  position: absolute;
+  top: -36px;
+  right: -60px;
+}
+
+#manfaat .card-manfaat {
+  background-color: #fcebe1;
+  width: 778px;
+  padding: 20px;
+  border: solid 2px black;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#manfaat .card-manfaat img {
+  position: absolute;
+  top: -52px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#manfaat .card-manfaat ol {
+  border: solid 4px #e092d4;
+  margin-bottom: 0;
+  padding: 10px 10px 10px 40px;
+}
+#manfaat .card-manfaat ol li {
+  font-size: 20px;
+  font-family: "DynaPuff", system-ui;
+}
+#manfaat .next button {
+  position: absolute;
+  border-radius: 50px;
+  width: 178px;
+  height: 68px;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: transparent;
+  bottom: 20px;
+  right: 20px;
+  border: double 8px #55ace2;
+  color: #55ace2;
+}
+
+#manfaat .next button:active {
+  border: double 8px #0e7658;
+  color: #0e7658;
+}
+
+@media (max-width: 576px) {
+  #manfaat .container-fluid {
+    height: auto;
+  }
+  #manfaat .card-manfaat {
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  #manfaat .col-3 {
+    display: none;
+  }
+  #manfaat .judul h1 {
+    color: #ee8d4a;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 800;
+    font-size: 35px;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  #manfaat .judul {
+    margin-top: 30px;
+  }
+
+  #manfaat .judul img {
+    height: 40px !important;
+    top: -15px;
+    right: -30px;
+  }
+  #manfaat .next button {
+    position: static;
+    width: 128px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 900;
+    bottom: 100px;
+  }
+  #manfaat .next{
+    display: flex;
+    justify-content: end;
+  }
+}

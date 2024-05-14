@@ -47,7 +47,20 @@
   right: 20px;
   border: double 8px #55ace2;
   color: #55ace2;
-  animation: kedkip 1.5s infinite alternate;
+  animation: kedkip 2s infinite alternate;
+}
+.next2 button {
+  position: absolute;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  bottom: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  border: double 8px #55ace2;
+  color: #55ace2;
+  animation: kedkip 2s infinite alternate;
 }
 
 .next button:active {
@@ -67,7 +80,7 @@
   #tipsDietP1 .card-tpdP1 {
     margin-bottom: 20px;
   }
-  #tipsDietP1  .next button {
+  #tipsDietP1 .next button {
     width: 68px;
     height: 48px;
     font-size: 15px;
@@ -78,13 +91,13 @@
 }
 
 @keyframes kedkip {
-  from {
+  0% {
     border: double 8px #55ace2;
     color: #55ace2;
   }
-  to {
-    border: double 8px #2d323554;
-    color: #2d323554;
+  50% {
+    border: double 8px #415663;
+    color: #415663;
   }
 }
 
@@ -141,7 +154,6 @@
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 70px;
-    
   }
   #tipsDietP2 .container-fluid {
     height: auto;
@@ -153,5 +165,174 @@
     font-weight: 900;
     bottom: -20px;
     right: 20px;
+  }
+  #tipsDietP2 .next2 button {
+    width: 68px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 900;
+    bottom: -20px;
+    left: 20px;
+  }
+}
+
+/* ==================== */
+/* ==== tipsDietB1 ==== */
+/* ==================== */
+
+#tipsDietB1 {
+  height: 100vh;
+  background-color: #d8f19e;
+  position: relative;
+}
+#tipsDietB1 .card-tipsDietB1 {
+  width: 300px;
+  height: 440px;
+  background-color: #949595;
+  border-radius: 20px;
+}
+#tipsDietB1 .kotak-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 257px;
+}
+#tipsDietB1 .kotak-img2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 130px 130px;
+}
+#tipsDietB1 .card-tipsDietB1 .kotak-img img {
+  width: 60%;
+}
+#tipsDietB1 .card-tipsDietB1 .kotak-img2 img {
+  width: 100%;
+  height: 100%;
+}
+#tipsDietB1 .card-tipsDietB1 h3 {
+  font-family: "Fredoka", sans-serif;
+  padding: 10px 0px;
+  margin-bottom: 0;
+  color: white;
+}
+#tipsDietB1 .card-tipsDietB1 p {
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: 500;
+  color: white;
+}
+#tipsDietB1 .card-tipsDietB1.bg1 {
+  background-color: #4d5d53;
+}
+#tipsDietB1 .card-tipsDietB1.bg2 {
+  background-color: #c88728;
+}
+#tipsDietB1 .card-tipsDietB1.bg3 {
+  background-color: #c4c0bf;
+}
+#tipsDietB1 .card-tipsDietB1.bg4 {
+  background-color: #dea190;
+}
+
+@media (max-width: 576px) {
+  #tipsDietB1 {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  #tipsDietB1 .card-tipsDietB1 {
+    margin-bottom: 20px;
+  }
+  #tipsDietB1 .next button {
+    width: 68px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 900;
+    bottom: -15px;
+    right: 20px;
+  }
+  #tipsDietB1 .next2 button {
+    width: 68px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 900;
+    bottom: -15px;
+    left: 20px;
+  }
+}
+
+/* ==================== */
+/* ==== tipsDietB3 ==== */
+/* ==================== */
+
+#tipsDietB3 .container-fluid {
+  height: 100vh;
+  background-color: #d8f19e;
+  position: relative;
+}
+#tipsDietB3 .cardd {
+  width: 100%;
+  padding: 10px 30px 10px 30px;
+  border-radius: 30px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  border: solid 2px black;
+  box-shadow: 7px 7px 0px 5px #f476ce;
+}
+
+#tipsDietB3 .cardd .buble {
+  align-self: flex-end;
+}
+
+#tipsDietB3 .cardd .buble span {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(173, 234, 104);
+  border-radius: 50%;
+  border: solid 2px black;
+}
+
+#tipsDietB3 .next button {
+  position: absolute;
+  border-radius: 50px;
+  width: 178px;
+  height: 68px;
+  font-size: 25px;
+  font-weight: 900;
+  background-color: transparent;
+  bottom: -25px;
+  right: 20px;
+  border: double 8px #55ace2;
+  color: #55ace2;
+}
+
+#tipsDietB3 .next button:active {
+  border: double 8px #0e7658;
+  color: #0e7658;
+}
+
+#tipsDietB3 .penjelasan{
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  #tipsDietB3 .container-fluid {
+    height: auto;
+    padding-bottom: 70px;
+  }
+
+  #tipsDietB3 .col-4 img{
+    display: none;
+  }
+  #tipsDietB3 .next button {
+    width: 128px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 900;
   }
 }
